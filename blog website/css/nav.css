@@ -1,0 +1,45 @@
+.nav-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #282c35;
+}
+
+
+.nav-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+
+
+.nav-link  a {
+  margin: 5px;
+  padding: 5px;
+}
+
+.nav-link a:hover{
+  cursor: pointer;
+  color: #222 !important;
+  background-color: #fffaf0;
+  border: 1px solid #fffaf0;
+}
+
+.nav-bar #blog-title{
+  margin: 20px;
+}
+
+@media(min-width: 600px){
+  .nav-bar{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-link  a {
+    margin: 10px;
+    padding: 10px;
+  }
+}

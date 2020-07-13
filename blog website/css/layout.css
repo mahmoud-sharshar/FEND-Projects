@@ -1,0 +1,49 @@
+@import "nav.css";
+@import "subscribe.css";
+
+body {
+	color: #fff;
+  background-color: #21252c;
+  font-size: large;
+}
+
+.post-metadata {
+  color: #ccc;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.post-metadata * {
+  padding-right: 0.5rem;
+}
+
+.post-metadata *:not(:last-child)::after {
+  content: ".";
+  padding-left: 0.5rem;
+  transform: translateY(-3px);
+}
+
+
+a {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer{
+	margin: 20px;
+	text-align: center;
+}
+
+.footer a{
+	text-decoration: underline;
+	margin: 20px;
+	padding: 20px;
+}
+
+.footer a:hover{
+	color: #222 !important;
+  background-color: #fffaf0;
+  border: 1px solid #fffaf0;
+}

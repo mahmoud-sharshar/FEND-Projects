@@ -1,0 +1,37 @@
+.subscription {
+  background-color: #282c35;
+  text-align: center;
+}
+
+.subscription > p {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+.email-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-field input {
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  padding: 1rem;
+}
+
+.email-field button {
+  background: #49a8e4;
+  border: 0;
+  color: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+@media(min-width: 600px){
+  .subscription{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+  }
+}
