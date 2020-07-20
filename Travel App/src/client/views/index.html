@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Travel Planner</title>
+  </head>
+  <body>
+
+    <h1 id="page-title">Travel Planner</h1>
+    <form id="travel-form">
+      <div class="form-field">
+        <label for=""> Location</label>
+        <input id="location-input" type="text" name="location" placeholder="Enter the location">
+      </div>
+
+      <div class="form-dates">
+        <div id="start-date">
+          <label for=""> Start Date</label>
+          <input id="start-date-input" type="date" name="location" placeholder="Enter the Date">
+        </div>
+
+        <div id="end-date">
+          <label for=""> End Date</label>
+          <input id="end-date-input" type="date" name="location" placeholder="Enter the Date">
+        </div>
+      </div>
+
+      <div class="form-field">
+        <input id="submit-btn" type="submit" name="" value="Submit">
+      </div>
+    </form>
+
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js').then(registration => {
+            console.log('SW registered: ', registration);
+          }).catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+        });
+      }
+    </script>
+
+  </body>
+</html>

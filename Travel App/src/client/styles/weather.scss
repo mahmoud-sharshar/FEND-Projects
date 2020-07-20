@@ -1,0 +1,39 @@
+#trip-status{
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #282c35;
+  color: #ccc;
+  @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+
+  }
+}
+
+#weather-status{
+  padding: 20px;
+  color: #fff;
+}
+
+#img-block{
+  width: 50%;
+}
+
+#city-img{
+  width: 100%;
+}
+
+#city-name, #date-view {
+  font-weight: bold;
+  font-size: large;
+}
+
+@media (max-width: 600px) {
+  #trip-status{
+    flex-direction: column;
+  }
+
+}
